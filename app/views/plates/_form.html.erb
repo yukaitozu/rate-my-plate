@@ -1,5 +1,5 @@
 <%= simple_form_for [@restaurant, @plate] do |f| %>
   <%= f.input :name %>
-  <%= f.association :rating %>
+  <%= f.input :rating %>
   <%= f.submit "Add", class: 'btn-primary'%>
 <% end %>
