@@ -28,6 +28,6 @@ class PlatesController < ApplicationController
   private
 
   def plate_params
-    params.require(:plate).permit(:name, :rating)
+    params.require(:plate).permit(:name, :rating, :comment)
   end
 end
