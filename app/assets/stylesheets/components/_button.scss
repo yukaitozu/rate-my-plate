@@ -1,21 +1,23 @@
 .btn-banner {
   align-self:center;
   background:transparent;
-  padding:1rem 1rem;
-  margin:0 1rem;
+  padding: 16px 32px;
+  margin: 0 auto;
+  width: 200px;
+  display: block;
   transition:all .5s ease;
   color: white;
-  font-size: 24px;
+  font-size: 16px;
   font-family: $header-font;
-  letter-spacing:1px;
+  letter-spacing: 2px;
   outline:none;
   box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  border: solid 2px white;
+  border: solid 3px white;
 }
 
 .btn-banner:hover {
-  box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
-  border: solid 2px #adb5bd;
+  box-shadow: 2px 8px 4px -6px hsla(0,0%,0%,.4);
+  border: solid 3px #adb5bd;
   color: #adb5bd;
 }
