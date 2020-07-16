@@ -2,10 +2,20 @@
   <div class="restaurant-header">
     <h1 style="text-align:center">MY RESTAURANTS</h1>
   </div>
-  <ul>
+
+  <div class="cards">
     <% @restaurants.each do |restaurant| %>
-      <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+      <div class="card-trip">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+        <div class="card-trip-infos">
+          <div>
+            <h2><%= link_to restaurant.name, restaurant_path(restaurant) %></h2>
+            <p><%= restaurant.rating %></p>
+          </div>
+          <h2 class="card-trip-pricing">£99.99</h2>
+        </div>
+      </div>
     <% end %>
-  </ul>
+  </div>
 </div>
 
