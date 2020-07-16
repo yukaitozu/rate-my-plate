@@ -8,12 +8,13 @@
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  height: 200px;
+  height: 250px;
   width: 330px;
+  margin-top: 16px;
 }
 
 .card-trip > img {
-  height: 124px;
+  height: 180px;
   width: 100%;
   object-fit: cover;
 }
