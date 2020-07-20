@@ -1,8 +1,20 @@
 <div class="container">
   <div class="restaurant-info">
-    <h2><%= @restaurant.name %></h2>
+    <h2 class="plate-header"><%= @restaurant.name %></h2>
     <p><%= @restaurant.address %></p>
-    <p><%= @restaurant.rating %></p>
+    <p>
+      <% if @restaurant.rating == 1 %>
+        <%= "⭐️" %>
+      <% elsif @restaurant.rating == 2 %>
+        <%= "⭐️ ⭐️" %>
+      <% elsif @restaurant.rating == 3 %>
+        <%= "⭐️ ⭐️ ⭐️" %>
+      <% elsif @restaurant.rating == 4 %>
+        <%= "⭐️ ⭐️ ⭐️ ⭐️" %>
+      <% else @restaurant.rating == 5 %>
+        <%= "⭐️ ⭐️ ⭐️ ⭐️ ⭐️" %>
+      <% end %>
+    </p>
   </div>
 
   <div class="plate-list">
