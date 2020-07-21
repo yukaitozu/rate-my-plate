@@ -21,3 +21,27 @@
   border: solid 3px #adb5bd;
   color: #adb5bd;
 }
+
+.btn-add {
+  align-self:center;
+  background:transparent;
+  padding: 16px 32px;
+  margin: 0 auto;
+  width: 250px;
+  display: block;
+  transition:all .5s ease;
+  color: black;
+  font-size: 12px;
+  font-family: $header-font;
+  letter-spacing: 2px;
+  outline:none;
+  box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 3px black;
+}
+
+.btn-add:hover {
+  box-shadow: 2px 8px 4px -6px hsla(0,0%,0%,.4);
+  border: solid 3px #adb5bd;
+  color: #adb5bd;
+}
