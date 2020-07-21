@@ -20,7 +20,21 @@
   <div class="plate-list">
     <ul>
       <% @restaurant.plates.each do |plate| %>
-        <p><%= plate.name %> | <%= plate.rating %></p>
+        <p><%= plate.name %> |
+          <% if @restaurant.rating == 1 %>
+            <%= "⭐️" %>
+          <% elsif @restaurant.rating == 2 %>
+            <%= "⭐️ ⭐️" %>
+          <% elsif @restaurant.rating == 3 %>
+            <%= "⭐️ ⭐️ ⭐️" %>
+          <% elsif @restaurant.rating == 4 %>
+            <%= "⭐️ ⭐️ ⭐️ ⭐️" %>
+          <% else @restaurant.rating == 5 %>
+            <%= "⭐️ ⭐️ ⭐️ ⭐️ ⭐️" %>
+          <% end %>
+        </p>
+        <p><%= plate.price %></p>
+        <p><%= plate.comment %></p>
       <% end %>
     </ul>
   </div>
