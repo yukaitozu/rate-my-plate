@@ -13,6 +13,9 @@
         <li class="nav-item active">
           <%= link_to "Home", "#", class: "nav-link" %>
         </li>
+        <li class="nav-item active">
+          <%= link_to "Add Restaurant", new_restaurant_path, class: "nav-link" %>
+        </li>
         <li class="nav-item dropdown">
 <!--           <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
  -->          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -27,9 +30,6 @@
 <div class="container">
   <div class="restaurant-header">
     <h1>My Restaurants</h1>
-  </div>
-  <div>
-    <%= link_to "Add New Restaurant", new_restaurant_path, class: "btn-add-restaurant" %>
   </div>
 
   <div class="cards">
