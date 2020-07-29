@@ -34,6 +34,7 @@ gem 'simple_form'
 
 #MANUALLY ADDED
 gem 'bootstrap'
+gem 'cloudinary', '~> 1.12.0'
 
 group :development, :test do
   gem 'pry-byebug'
