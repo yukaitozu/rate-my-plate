@@ -1,7 +1,7 @@
 <%= simple_form_for(@restaurant) do |f| %>
   <%= f.input :name, label: false, placeholder: 'Name', error: 'Name is mandatory, please specify one' %>
   <%= f.input :address, label: false, placeholder: 'Address' %>
-  <%= f.input :rating, label: false, placeholder: 'Rating' %>
+  <%= f.input :rating, collection: (1..5).to_a, label: 'Rate Your Plate' %>
   <%= f.input :photo, as: :file %>
   <%= f.submit "Add", class: "btn-add" %>
 <% end %>
