@@ -1,4 +1,4 @@
- input {
+input {
   text-align: center;
   padding: 8px;
   margin: 8px 0px;
@@ -6,4 +6,12 @@
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   border: solid 3px white;
+  display: inline-block;
+  width: 100%;
+  clear: both;
+}
+
+.form-container {
+  width: 500px;
+  clear: both;
 }
