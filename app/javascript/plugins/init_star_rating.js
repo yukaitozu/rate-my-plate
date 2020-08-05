@@ -1,10 +1,17 @@
 import "jquery-bar-rating";
 import $ from 'jquery';
 
-const initStarRating = () => {
+const initStarRatingRestaurant = () => {
   $('#restaurant_rating').barrating({
     theme: 'css-stars'
   });
 };
 
-export { initStarRating };
+const initStarRatingPlate = () => {
+  $('#plate_rating').barrating({
+    theme: 'css-stars'
+  });
+};
+
+export { initStarRatingRestaurant };
+export { initStarRatingPlate };

@@ -3,9 +3,11 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-import { initStarRating } from '../plugins/init_star_rating';
+import { initStarRatingRestaurant } from '../plugins/init_star_rating';
+import { initStarRatingPlate } from '../plugins/init_star_rating';
 
-initStarRating();
+initStarRatingRestaurant();
+initStarRatingPlate();
 
 require("@rails/ujs").start()
 require("turbolinks").start()
