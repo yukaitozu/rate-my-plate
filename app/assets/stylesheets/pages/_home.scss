@@ -6,10 +6,12 @@
   background-size: cover;
   background-position: center;
   padding: 150px 0;
+  height: 100vh;
 }
 
 .banner h1 {
   margin: 0;
+  margin-top: 40px;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
   font-size: 80px;
@@ -33,7 +35,7 @@ hr.banner-hr {
   border:solid 2px white;
   border-radius: 255px 15px 225px 15px;
   width: 800px;
-  margin-top: 24px;
+  margin-top: 32px;
   margin-bottom: 32px;
 }
 
