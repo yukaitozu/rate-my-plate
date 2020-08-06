@@ -74,3 +74,23 @@
   border: solid 3px black;
   color: black;
 }
+
+.btn-upload-photo {
+  text-align: center;
+  padding: 8px;
+  margin: 8px 0px;
+  margin-bottom: 16px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 3px white;
+  display: inline-block;
+  clear: both;
+  transition:all .5s ease;
+}
+
+.btn-upload-photo:hover {
+  box-shadow: 2px 8px 4px -6px hsla(0,0%,0%,.4);
+  border: solid 3px black;
+  color: black;
+}
+

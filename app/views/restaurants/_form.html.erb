@@ -2,6 +2,6 @@
   <%= f.input :name, label: false, placeholder: 'Name', error: 'Name is mandatory, please specify one' %>
   <%= f.input :address, label: false, placeholder: 'Address' %>
   <%= f.input :rating, collection: (1..5).to_a, label: 'Rate the Restaurant' %>
-  <%= f.input :photo, as: :file %>
+  <%= f.input :photo, input_html: { class: 'd-none' }, label_html: { class: 'btn-upload-photo'}, label: '📷 Upload a photo' %>
   <%= f.submit "Add", class: "btn-add" %>
 <% end %>
