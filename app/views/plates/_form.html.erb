@@ -3,6 +3,6 @@
   <%= f.input :rating, collection: (1..5).to_a, label: 'Rate Your Plate' %>
   <%= f.input :price, label: false, placeholder: 'Price' %>
   <%= f.input :comment, label: false, placeholder: 'Comment' %>
-  <%= f.input :photo, as: :file %>
+  <%= f.input :photo, input_html: { class: 'd-none' }, label_html: { class: 'btn-upload-photo'}, label: '📷 Upload a photo' %>
   <%= f.submit "Add", class: 'btn-add'%>
 <% end %>
